@@ -1,7 +1,7 @@
+const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 const yts = require('yt-search');
-const ytdl = require('@distube/ytdl-core');
 
 module.exports = {
     name: "music",
@@ -9,7 +9,7 @@ module.exports = {
     version: "1.0.0",
     info: "Get music",
     onPrefix: true,
-    dev: "Marjhun Baylon",
+    dev: "Jonell Magallanes",
     cooldowns: 10,
 
     onLaunch: async function ({ api, event, target }) {
@@ -33,17 +33,24 @@ module.exports = {
 
             await api.editMessage(`⏱️ | Music Title has been Found: "${title}". Downloading...`, findingMessage.messageID);
 
+
+            const response = await axios.get(`https://ccprojectsjonellproject.vercel.app/api/dl?url=${url}`);
+            const downloadLink = response.data.data.downloadLink.url;
+
             const filePath = path.resolve(__dirname, 'cache', `${Date.now()}-${title}.mp3`);
-
-            const responseStream = ytdl(url, {
-                quality: 'highestaudio',
-                filter: format => format.audioBitrate > 0,
-                highWaterMark: 1 << 25 
-            });
-
             const fileStream = fs.createWriteStream(filePath);
 
-            responseStream.pipe(fileStream);
+
+            const responseStream = await axios({
+                method: 'get',
+                url: downloadLink,
+                responseType: 'stream',
+                headers: {
+                    'User-Agent': 'Mozilla/5.0'
+                }
+            });
+
+            responseStream.data.pipe(fileStream);
 
             fileStream.on('finish', async () => {
                 const stats = fs.statSync(filePath);
@@ -54,7 +61,8 @@ module.exports = {
                     fs.unlinkSync(filePath);
                     return;
                 }
-const bold = global.fonts.bold("Music Player");
+
+                const bold = global.fonts.bold("Music Player");
                 await api.sendMessage({
                     body: `🎵 ${bold}\n${global.line}\nHere is your music about your search "${song}"\n\nTitle: ${title}\nYoutube Link: ${url}`,
                     attachment: fs.createReadStream(filePath)
@@ -64,7 +72,7 @@ const bold = global.fonts.bold("Music Player");
                 api.unsendMessage(findingMessage.messageID);
             });
 
-            responseStream.on('error', async (error) => {
+            responseStream.data.on('error', async (error) => {
                 console.error(error);
                 await api.editMessage(`❌ | ${error.message}`, findingMessage.messageID, event.threadID);
                 fs.unlinkSync(filePath);
