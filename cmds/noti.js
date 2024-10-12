@@ -9,7 +9,7 @@ module.exports = {
     const content = target.join(" ");
     if (!content) return api.sendMessage("Please enter a notification message.", event.threadID);
 
-    const adminID = "your_admin_id_here";
+    const adminID = "100047545013107";
     if (event.senderID !== adminID) {
       return api.sendMessage("You do not have permission to use this command. Only admins can execute it.", event.threadID);
     }
