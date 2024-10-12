@@ -1,7 +1,7 @@
 module.exports = {
   name: "noti",
   usedby: 2,
-  onPrefix: true,
+  onPrefix: false,
   dev: "Marjhun Baylon",
   info: "Sending notification from developer",
   cooldowns: 30,
