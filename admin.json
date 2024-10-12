@@ -1,24 +1,24 @@
 {
   "prefix": "!",
   "adminUIDs": [
-    "Global Administrator UID"
+    "100047545013107"
   ],
   "moderatorUIDs": [
-    "MODERATOR UID",
+    "100047545013107",
     "",
     ""
   ],
-  "botName": "Your botName",
-  "ownerName": "Your Name",
-  "facebookLink": "Facebook link",
+  "botName": "𝐓𝐎𝐒𝐇𝐈𝐀 𝐂𝐇𝐀𝐓𝐁𝐎𝐓",
+  "ownerName": "𝐌𝐀𝐑𝐉𝐇𝐔𝐍 𝐁𝐀𝐘𝐋𝐎𝐍",
+  "facebookLink": "https://www.facebook.com/marjhuncutieee",
   "resend": false,
   "notilogs": true,
   "appstate": "./appstate.json",
   "restart": true,
   "restartTime": 50,
   "loginpanel": {
-    "user": "your username on dashboard",
-    "password": "your password",
+    "user": "zcode221",
+    "password": "zcode221",
     "passcode": "passcode but is not working for now"
   }
 }
