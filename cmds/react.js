@@ -2,7 +2,7 @@ module.exports = {
     name: "react",
     usedby: 0,
     info: "test",
-    onPrefix: true,
+    onPrefix: false,
     cooldowns: 6,
 
     callReact: async function ({ reaction, event, api }) {
