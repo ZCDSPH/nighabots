@@ -9,7 +9,7 @@ module.exports = {
   usedby: 0,
   info: "Showing The Status of Bot",
   dev: "𝙼𝚊𝚛𝚓𝚑𝚞𝚗 𝙱𝚊𝚢𝚕𝚘𝚗",
-  onPrefix: true,
+  onPrefix: false,
   cooldowns: 9,
 
   onLaunch: async function ({ actions }) {
