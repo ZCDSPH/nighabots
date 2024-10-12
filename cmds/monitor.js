@@ -5,12 +5,12 @@ module.exports = {
     usedby: 0,
     info: "Monitor website uptime, search for monitored URLs, and list all monitored URLs",
     onPrefix: true,
-    dev: "Jonell Magallanes",
+    dev: "Marjhun Baylon",
     cooldowns: 6,
     nickName: ["moni"],
 
 onLaunch: async function ({ api, event, target }) {
-    const baseUrl = "https://ccprojectprivilege.adaptable.app";
+    const baseUrl = "http://de01.uniplex.xyz:5611";
 
     if (!target[0]) {
         return api.sendMessage("Please specify a command: `add`, `list`, or `search`.", event.threadID, event.messageID);
