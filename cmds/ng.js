@@ -6,8 +6,8 @@ module.exports = {
   name: "ng",
   usedby: 0,
   info: "Get music from Newgrounds",
-  onPrefix: true,
-  dev: "Jonell Magallanes",
+  onPrefix: false,
+  dev: "Marjhun Baylon",
   cooldowns: 10,
 
 onLaunch: async function ({ api, event, target}) {
