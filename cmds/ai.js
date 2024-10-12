@@ -19,7 +19,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
             const { response: followUpResult } = response.data;
  
            api.setMessageReaction("✅", event.messageID, () => {}, true);
-    api.sendMessage(`𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
+    api.sendMessage(`𝐓𝐎𝐒𝐇𝐈𝐀 𝐂𝐇𝐀𝐓𝐁𝐎𝐓\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
         } catch (error) {
             console.error(error);
             api.sendMessage(error.message, threadID);
@@ -34,7 +34,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
 
         const apiUrl = `https://jonellprojectccapisexplorer.onrender.com/api/gptconvo?ask=${encodeURIComponent(target.join(" "))}&id=${id}`;
 
-        const lad = await actions.reply("🔎 Searching for an answer. Please wait...", threadID, messageID);
+        const lad = await actions.reply "", threadID, messageID);
 
         try {
             if (event.type === "message_reply" && event.messageReply.attachments && event.messageReply.attachments[0]) {
