@@ -8,7 +8,7 @@ module.exports = {
   name: "stats",
   usedby: 0,
   info: "Showing The Status of Bot",
-  dev: "Jonell Magallanes",
+  dev: "𝙼𝚊𝚛𝚓𝚑𝚞𝚗 𝙱𝚊𝚢𝚕𝚘𝚗",
   onPrefix: true,
   cooldowns: 9,
 
