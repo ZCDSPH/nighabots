@@ -6,8 +6,9 @@ const adminConfig = JSON.parse(fs.readFileSync("admin.json", "utf8"));
 module.exports = {
   name: "info",
   usedby: 0,
-  dev: "Jonell Magallanes",
-  info: "Show the info of owner",  onPrefix: true,
+  dev: "Marjhun Baylon",
+  info: "Show the info of owner",  
+  onPrefix: false,
   cooldowns: 8,
 
     onLaunch: async function ({ api, event }) {
