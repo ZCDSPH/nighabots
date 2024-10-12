@@ -4,7 +4,7 @@ module.exports = {
     name: "ai",
     usedby: 0,
     dmUser: false,
-    dev: "Jonell Magallanes",
+    dev: "𝙼𝚊𝚛𝚓𝚑𝚞𝚗 𝙱𝚊𝚢𝚕𝚘𝚗",
     nickName: ["chatgpt", "gpt"],
     info: "EDUCATIONAL",
     onPrefix: false,
@@ -19,7 +19,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
             const { response: followUpResult } = response.data;
  
            api.setMessageReaction("✅", event.messageID, () => {}, true);
-    api.sendMessage(`𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
+    api.sendMessage(`𝐓𝐎𝐒𝐇𝐈𝐀 𝐂𝐇𝐀𝐓𝐁𝐎𝐓\n━━━━━━━━━━━━━━━━━━\n ${followUpResult}\n━━━━━━━━━━━━━━━━━━`, threadID, event.messageID);
         } catch (error) {
             console.error(error);
             api.sendMessage(error.message, threadID);
@@ -34,7 +34,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
 
         const apiUrl = `https://jonellprojectccapisexplorer.onrender.com/api/gptconvo?ask=${encodeURIComponent(target.join(" "))}&id=${id}`;
 
-        const lad = await actions.reply("🔎 Searching for an answer. Please wait...", threadID, messageID);
+        const lad = await actions.reply("🔎 | 𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝙵𝙾𝚁 𝙰𝙽𝚂𝚆𝙴𝚁 , 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃", threadID, messageID);
 
         try {
             if (event.type === "message_reply" && event.messageReply.attachments && event.messageReply.attachments[0]) {
@@ -48,7 +48,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
                     const { vision } = response.data;
 
                     if (vision) {
-                        return api.editMessage(`𝗚𝗲𝗺𝗶𝗻𝗶 𝗩𝗶𝘀𝗶𝗼𝗻 𝗜𝗺𝗮𝗴𝗲 𝗥𝗲𝗰𝗼𝗴𝗻𝗶𝘁𝗶𝗼𝗻 \n━━━━━━━━━━━━━━━━━━\n${vision}\n━━━━━━━━━━━━━━━━━━\n`, lad.messageID, event.threadID, messageID);
+                        return api.editMessage('𝐓𝐎𝐒𝐇𝐈𝐀 𝐈𝐌𝐀𝐆𝐄 𝐑𝐄𝐂𝐎𝐆𝐍𝐈𝐓𝐈𝐎𝐍 𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐄 \n━━━━━━━━━━━━━━━━━━\n${vision}\n━━━━━━━━━━━━━━━━━━\n`, lad.messageID, event.threadID, messageID);
                     } else {
                         return api.sendMessage("🤖 Failed to recognize the image.", threadID, messageID);
                     }
@@ -58,7 +58,7 @@ api.setMessageReaction("⏱️", event.messageID, () => {}, true);        try {
             const response = await axios.get(apiUrl);
             const { response: result } = response.data;
 
-            const responseMessage = `𝗖𝗛𝗔𝗧𝗚𝗣𝗧\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`;
+            const responseMessage = `𝐓𝐎𝐒𝐇𝐈𝐀 𝐂𝐇𝐀𝐓𝐁𝐎𝐓\n━━━━━━━━━━━━━━━━━━\n${result}\n━━━━━━━━━━━━━━━━━━`;
             api.editMessage(responseMessage, lad.messageID, event.threadID, messageID);
 
             global.client.onReply.push({
