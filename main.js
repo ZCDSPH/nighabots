@@ -150,8 +150,15 @@ const startBot = () => {
         console.log(boldText(gradient.cristal("BOT Made By CC PROJECTS And Kaguya")))
 
         //credits
-        function _0x70cc(_0x37b4b2,_0xc8217e){var _0x42ef1b=_0x42ef();return _0x70cc=function(_0x70ccf6,_0x49bcc7){_0x70ccf6=_0x70ccf6-0x1b1;var _0x2431a1=_0x42ef1b[_0x70ccf6];return _0x2431a1;},_0x70cc(_0x37b4b2,_0xc8217e);}var _0x3ce376=_0x70cc;function _0x42ef(){var _0x50355c=['║\x20•\x20ARJHIL\x20DUCAYANAN','║\x20DEVELOPERS','20WEwOZj','log','332636uwTWZV','8FegRnO','16GHAclu','2koVLjT','3709044VTYAoY','4330224zXrMYG','168978IGziWo','467780dNDweh','╔════════════════════','║\x20=>\x20DEDICATED:\x20CHATBOT\x20COMMUNITY\x20AND\x20YOU','399021OaAAEX','cristal','9504616zKJDbY','╚════════════════════','║\x20•\x20JR\x20BUSACO'];_0x42ef=function(){return _0x50355c;};return _0x42ef();}(function(_0x2ac03a,_0x317593){var _0x34e5b5=_0x70cc,_0x26ec7b=_0x2ac03a();while(!![]){try{var _0x45b639=parseInt(_0x34e5b5(0x1bc))/0x1*(parseInt(_0x34e5b5(0x1b9))/0x2)+-parseInt(_0x34e5b5(0x1bf))/0x3*(parseInt(_0x34e5b5(0x1bb))/0x4)+-parseInt(_0x34e5b5(0x1c0))/0x5+parseInt(_0x34e5b5(0x1bd))/0x6+-parseInt(_0x34e5b5(0x1c3))/0x7*(-parseInt(_0x34e5b5(0x1ba))/0x8)+-parseInt(_0x34e5b5(0x1be))/0x9*(parseInt(_0x34e5b5(0x1b7))/0xa)+parseInt(_0x34e5b5(0x1b2))/0xb;if(_0x45b639===_0x317593)break;else _0x26ec7b['push'](_0x26ec7b['shift']());}catch(_0x5d5a89){_0x26ec7b['push'](_0x26ec7b['shift']());}}}(_0x42ef,0x90391),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)](_0x3ce376(0x1c1)))),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)](_0x3ce376(0x1b6)))),console['log'](boldText(gradient['cristal']('║\x20•\x20JONELL\x20MAGALLANES'))),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)](_0x3ce376(0x1b5)))),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)]('║\x20•\x20JAY\x20MAR'))),console['log'](boldText(gradient['cristal'](_0x3ce376(0x1b4)))),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)](_0x3ce376(0x1c2)))),console[_0x3ce376(0x1b8)](boldText(gradient[_0x3ce376(0x1b1)](_0x3ce376(0x1b3)))));
-        console.error(boldText(gradient.summer("[ BOT IS LISTENING ]")));
+    console.log(boldText(gradient.cristal("╔════════════════════")));
+console.log(boldText(gradient.cristal("║ DEVELOPERS")));
+console.log(boldText(gradient.cristal("║ • JONELL MAGALLANES")));
+console.log(boldText(gradient.cristal("║ • ARJHIL DUCAYANAN")));
+console.log(boldText(gradient.cristal("║ • JAY MAR")));
+console.log(boldText(gradient.cristal("║ • JR BUSACO")));
+console.log(boldText(gradient.cristal("║ => DEDICATED: CHATBOT COMMUNITY AND YOU")));
+console.log(boldText(gradient.cristal("╚════════════════════")));
+console.error(boldText(gradient.summer("[ BOT IS LISTENING ]")));
 
         handleListenEvents(api, commands, eventCommands, threadsDB, usersDB, adminConfig, prefix);
     });
