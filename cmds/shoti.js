@@ -9,7 +9,7 @@ module.exports = {
   usedby: 0,
   info: "Random shoti video",
   dev: "Marjhun Baylon",
-  onPrefix: true,
+  onPrefix: false,
   cooldowns: 9,
 
   onLaunch: async function ({ api, event, actions }) {
