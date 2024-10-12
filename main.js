@@ -147,16 +147,13 @@ const startBot = () => {
         console.log(boldText(gradient.cristal(`║ Threads: ${Object.keys(threadsDB).length}`)));
         console.log(boldText(gradient.cristal(`║ Users: ${Object.keys(usersDB).length} `)));
         console.log(boldText(gradient.cristal(`╚════════════════════`)));
-        console.log(boldText(gradient.cristal("BOT Made By CC PROJECTS And Kaguya")))
+        console.log(boldText(gradient.cristal("TOSHIA CHATBOT OPEN SRC")))
 
         //credits
     console.log(boldText(gradient.cristal("╔════════════════════")));
-console.log(boldText(gradient.cristal("║ DEVELOPERS")));
-console.log(boldText(gradient.cristal("║ • JONELL MAGALLANES")));
-console.log(boldText(gradient.cristal("║ • ARJHIL DUCAYANAN")));
-console.log(boldText(gradient.cristal("║ • JAY MAR")));
-console.log(boldText(gradient.cristal("║ • JR BUSACO")));
-console.log(boldText(gradient.cristal("║ => DEDICATED: CHATBOT COMMUNITY AND YOU")));
+console.log(boldText(gradient.cristal("║ DEVELOPER")));
+console.log(boldText(gradient.cristal("║ • MARJHUN BAYLON")));
+
 console.log(boldText(gradient.cristal("╚════════════════════")));
 console.error(boldText(gradient.summer("[ BOT IS LISTENING ]")));
 
