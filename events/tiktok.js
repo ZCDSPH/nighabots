@@ -4,7 +4,7 @@ const gradient = require('gradient-string');
 module.exports = {
     name: 'tiktokauto',
     ver: '1.0',
-    prog: 'Jonell Magallanes',
+    prog: 'Marjhun Baylon',
 
     onEvents: async function ({ api, event, messageID }) {
         if (event.type === 'message') {
