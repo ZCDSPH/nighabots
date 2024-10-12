@@ -3,7 +3,7 @@ module.exports = {
   usedby: 4,
     info: "Send a comment Post using bot",
 onPefix: true,
-dev: "Jonell Magallanes",
+dev: "Marjhun Baylon",
   cooldowns: 5,
 onLaunch: async function ({ api, event, target }) {
   if (target.length < 2) {
