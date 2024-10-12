@@ -7,7 +7,7 @@ module.exports = {
     usedby: 0,
     info: "display available commands",
     dev: "Marjhun Baylon",
-    onPrefix: true,
+    onPrefix: false,
     usages: "help",
     cooldowns: 10,
 
