@@ -2,7 +2,7 @@ module.exports = {
   name: "noti",
   usedby: 2,
   onPrefix: true,
-  dev: "Jonell Magallanes",
+  dev: "Marjhun Baylon",
   info: "Sending notification from developer",
   cooldowns: 30,
   onLaunch: async function({ api, event, target  }) {
