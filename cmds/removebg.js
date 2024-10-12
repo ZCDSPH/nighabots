@@ -5,7 +5,7 @@ module.exports = {
   name: "removebg",
   usedby: 0,
   onPrefix: false,
-  dev: "Jonell Magallanes",
+  dev: "Marjhun Baylon",
   cooldowns: 2,
 
 onLaunch: async function ({ api, event, target })  {
